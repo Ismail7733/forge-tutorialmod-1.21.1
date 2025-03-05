@@ -1,6 +1,7 @@
 package net.ismailo.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.ismailo.tutorialmod.blocks.ModBlocks;
 import net.ismailo.tutorialmod.item.ModCreativeTabs;
 import net.ismailo.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -47,9 +48,10 @@ public class TutorialMod
     }
 
     public void registerDefferedRegisters(IEventBus modEventBus) {
-        //Register the creative tab first
+
         ModCreativeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -62,6 +64,10 @@ public class TutorialMod
     {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.BANANA);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BANANA_BLOCK);
         }
     }
 

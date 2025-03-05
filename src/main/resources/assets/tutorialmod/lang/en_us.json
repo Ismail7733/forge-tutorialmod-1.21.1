@@ -1,5 +1,7 @@
 {
   "item.tutorialmod.banana": "Banana",
 
-  "creativetab.tutorialmod.banana_tab": "Banana Mod"
+  "creativetab.tutorialmod.banana_tab": "Banana Mod",
+
+  "block.tutorialmod.banana_block": "Block of Banana"
 }
