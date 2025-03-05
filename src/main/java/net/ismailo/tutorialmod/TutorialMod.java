@@ -1,6 +1,7 @@
 package net.ismailo.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.ismailo.tutorialmod.item.ModCreativeTabs;
 import net.ismailo.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -46,6 +47,8 @@ public class TutorialMod
     }
 
     public void registerDefferedRegisters(IEventBus modEventBus) {
+        //Register the creative tab first
+        ModCreativeTabs.register(modEventBus);
         ModItems.register(modEventBus);
     }
 
