@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "tutorialmod:banana"
+    },
+    {
+      "item": "tutorialmod:banana"
+    },
+    {
+      "item": "tutorialmod:banana"
+    },
+    {
+      "item": "tutorialmod:banana"
+    },
+    {
+      "item": "tutorialmod:banana"
+    },
+    {
+      "item": "tutorialmod:banana"
+    },
+    {
+      "item": "tutorialmod:banana"
+    },
+    {
+      "item": "tutorialmod:banana"
+    },
+    {
+      "item": "tutorialmod:banana"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:banana_block"
+  }
+}
